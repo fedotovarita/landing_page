@@ -25,8 +25,7 @@ a {
   font-size: 14px;
   line-height: 24px;
 }
-.nav-item a:active,
-.dropdown a:active {
+.nav-item a:active {
   color: black !important;
 }
 .nav-menu a:hover {
@@ -35,22 +34,19 @@ a {
 .nav-menu a:active {
   color: black !important;
 }
-.list-unstyled a:focus {
-  background-color: #E6EDFA;
+.list-of-services {
+  list-style: none;
+  padding-left: 8px;
+  margin-bottom: 0px;
+  width: 112px;
+  background-color: #FFFFFF;
+}
+.list-of-services li {
+  padding: 9px 0px;
 }
 .nav-btn-menu {
   display: flex;
   justify-content: center;
-}
-.list-unstyled {
-  background-color: white;
-  margin: 0%;
-}
-.dropdown-menu {
-  border: none !important;
-  border-radius: 0% !important;
-  background-color: #FFFFFF;
-  margin-top: -16px;
 }
 .btn.btn-outline-dark {
   border-radius: 0%;
@@ -98,12 +94,19 @@ a {
 .burger-menu p {
   display: none;
 }
+.openNav {
+  display: flex;
+}
 @media (max-width: 1200px) {
   .nav-menu a {
     font-size: 12px;
   }
 }
 @media (max-width: 991px) {
+  .openNav {
+    display: flex;
+    flex-direction: column;
+  }
   .header {
     position: fixed;
     top: 0;
@@ -176,6 +179,14 @@ a {
   .nav-menu a {
     font-size: 8px;
   }
+  .list-of-services {
+    padding-left: 64px;
+    width: 100%;
+    background-color: transparent;
+  }
+  .list-of-services li {
+    padding: 24px 0px;
+  }
   .header-logo {
     order: 1;
   }
@@ -207,32 +218,6 @@ a {
   .nav-item .nav-link {
     padding: 24px 0px;
   }
-  .nav-item a:active,
-  .dropdown a:active {
-    color: green;
-  }
-  .dropdown-menu.show {
-    background-color: transparent;
-  }
-  .list-unstyled {
-    background-color: transparent;
-  }
-  .list-unstyled a {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    text-align: left;
-    padding-bottom: 24px;
-    padding-left: 60px;
-  }
-  hr {
-    display: block;
-    width: 624px;
-    background-color: #DBDBDB;
-    margin-top: 0px !important;
-  }
   .nav-btn-menu.col-5 {
     width: fit-content;
     margin-top: -3px;
@@ -240,9 +225,6 @@ a {
   .nav-item {
     max-width: 81.25%;
     border-bottom: 1px solid #DBDBDB;
-  }
-  .openNav {
-    height: 270px;
   }
 }
 @media (max-width: 575px) {

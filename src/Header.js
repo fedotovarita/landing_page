@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Image, Nav } from "react-bootstrap";
 import './Header.css';
 import logo from "./images/Logotype.png";
-import DropdownEl from './Dropdown.js';
 import { CSSTransition } from "react-transition-group";
 
 const Header = () => {
@@ -41,7 +40,16 @@ const Header = () => {
                                 <Nav.Link href="#">About us</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href="#" className={isOpen ? 'openNav' : null} onClick={slideEl}><DropdownEl /></Nav.Link>
+                                <Nav.Link href="#" className={isOpen ? 'openNav' : null} onClick={slideEl}>
+                                    Our services {isOpen ? <i class="fas fa-chevron-up"></i> : <i class="fas fa-chevron-down"></i>}
+                                    {isOpen ? <ul className="list-of-services">
+                                        <li><a>Lorem ipsum</a></li>
+                                        <li><a>Lorem ipsum</a></li>
+                                        <li><a>Lorem ipsum</a></li>
+                                        <li><a>Lorem ipsum</a></li>
+                                    </ul> : null}
+                                
+                                </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link href="#" >Contact us</Nav.Link>
