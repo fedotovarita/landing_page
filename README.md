@@ -2,8 +2,6 @@
 
 This is a landing page for my test task.
 
-Demo is available at [https://ill-fated-slip.surge.sh/](https://ill-fated-slip.surge.sh/)
-
 ## Project setup
 
 1. Clone the project
