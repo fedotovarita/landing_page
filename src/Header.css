@@ -185,9 +185,9 @@ a {
     background-color: transparent;
   }
   .list-of-services li {
-    padding: 24px 0px;
+    padding: 12px 0px;
   }
-  .list-of-services a {
+  .list-of-services li a {
     font-size: 20px;
   }
   .header-logo {
