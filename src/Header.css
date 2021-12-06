@@ -187,6 +187,9 @@ a {
   .list-of-services li {
     padding: 24px 0px;
   }
+  .list-of-services a {
+    font-size: 20px;
+  }
   .header-logo {
     order: 1;
   }
